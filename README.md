@@ -167,6 +167,49 @@ Training and validation curves are visualized using `matplotlib`.
 
 ---
 
+# System Architecture
+
+```text
+Audio Dataset
+(.wav files / .npy MFCC files)
+        |
+        v
+Audio Preprocessing
+- Load audio files
+- Remove pauses
+- Standardize audio format
+        |
+        v
+Feature Extraction
+- Extract MFCC features using librosa
+- Convert audio into numerical feature arrays
+        |
+        v
+Data Preparation
+- Encode accent labels
+- One-hot encode classes
+- Train-test split
+- Normalize features
+- Apply class weights
+        |
+        v
+Model Training
+- LSTM
+- Bidirectional LSTM
+- BiLSTM + Attention
+- Conv1D + BiLSTM
+        |
+        v
+Model Evaluation
+- Accuracy
+- Validation accuracy
+- Loss
+- Validation loss
+        |
+        v
+Accent Prediction
+Predicted accent class
+
 # Results
 
 Different architectures produced varying performance levels during experimentation.
