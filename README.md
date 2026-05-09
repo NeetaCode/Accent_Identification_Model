@@ -119,4 +119,3 @@ Project Summary
 This project demonstrates an end-to-end workflow for speech accent classification using deep learning. It includes audio preprocessing, MFCC extraction, sequential neural network modeling, evaluation, and experimentation across multiple architectures to study accent recognition performance.
 Code and implementation details were based on the provided notebook and training experiments.
 
-
